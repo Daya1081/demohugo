@@ -29,6 +29,26 @@ document.querySelector(".bars__menu").addEventListener("click", () => {
     }
 
 }
+document.addEventListener('DOMContentLoaded', function() {
+    // Selecciona todos los enlaces con la clase "cargarInformacion"
+    var cargarInformacionLinks = document.querySelectorAll('.cargarInformacion');
+  
+    // Agrega un evento clic a cada enlace
+    cargarInformacionLinks.forEach(function(link) {
+      link.addEventListener('click', function(event) {
+        //event.preventDefault(); // Evita que el enlace abra una nueva página
+  
+        // Obtiene los valores de los atributos de datos del enlace
+        var asunto = link.getAttribute('data-asunto');
+        var mensaje = link.getAttribute('data-mensaje');
+  
+        // Completa el formulario con los valores obtenidos
+        document.querySelector('input[name="asunto"]').value = asunto;
+        document.querySelector('textarea[name="mensaje"]').value = mensaje;
+        document.querySelector('input[name="nombre"]').focus();
+      });
+    });
+  });
  /* $(function(){
 
     $('a[href*="#"]').click(function() {
