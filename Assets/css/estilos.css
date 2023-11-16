@@ -145,7 +145,7 @@ h1{
 .b_text{
     display: block;
     width: 150px;
-    margin-top: 40px;
+    margin-top: 6%;
     padding: 10px 20px;
     text-align: center;
     font-weight: 500;
@@ -168,7 +168,7 @@ h1{
 }
 /*ESTILOS GENERALES CARDS*/
 .contenedor_card_primaria{
-    padding-top: 100px;
+    padding-top: 130px;
 }
 .card_primaria{
     max-width: 1200px;
@@ -233,7 +233,7 @@ h1{
 }
 /*SECCION 3*/
 .container_nosotros{
-    padding: 100px 0px;
+    padding: 130px 0px;
     margin-top: 100px;
     background: var(--background-color);
 }
@@ -249,6 +249,23 @@ h1{
     width: 100%;
     padding-right: 40px;
 }
+.contnombre{
+    display: flex;
+    width: 100%;
+}
+.nombre{
+    width: 80%;
+}
+.logonombre{
+    width: 20%;
+    position: relative;
+}
+.logonombre img{
+    position: absolute; 
+    width: 90%;
+    object-fit: cover;
+    display: flex;
+}
 .text_nosotros span{
     color: var(--color_text-primary);
     font-weight: bold;
@@ -261,7 +278,7 @@ h1{
 }
 .text_nosotros p{
     font-size: var(--text_paragraph);
-    margin-top: 40px;
+    margin-top: 5%;
     color: var(--color_text-tertiary);
     line-height: 1.5rem;
 }
