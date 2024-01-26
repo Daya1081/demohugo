@@ -110,7 +110,14 @@ header{
 .menu .socialMedia img{
     width: 20px;
 }
-
+#whatsapp-button img {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999999;
+}
 /*PORTADA DE INICIO*/
 
 .containerPortada{
